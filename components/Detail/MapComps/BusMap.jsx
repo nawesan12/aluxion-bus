@@ -1,6 +1,32 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
+
+import mapboxgl from 'mapbox-gl'
+import "mapbox-gl/dist/mapbox-gl.css"; 
 
 export default function BusMap(props) {
+
+    const [map, setMap] = useState()
+    const mapNode = useRef()
+
+    useEffect(() => {
+        const node = mapNode.current;
+
+        if (typeof window === "undefined" || node === null) return;
+    
+        const mapboxMap = new mapboxgl.Map({
+          container: node,
+                accessToken: 'pk.eyJ1IjoibmF3ZXNhbjEyIiwiYSI6ImNsMDBodHRvMjBraWczbnI4eW02d2JiM2wifQ.Dv6VAACK0o4iGh64xHzNdQ',
+                style: "mapbox://styles/mapbox/streets-v11",
+          center: [-74.5, 40],
+          zoom: 9,
+        });
+    
+        setMap(mapboxMap);
+    
+            return () => {
+          mapboxMap.remove();
+        };
+      }, []);
 
     return(
         <>
@@ -13,6 +39,11 @@ export default function BusMap(props) {
                         <line x1="5" y1="12" x2="11" y2="6" />
                     </svg>
                 </header>
+
+                <section 
+                    ref={mapNode}
+                    style={{width:'100%', height:'100%'}}
+                />
             </section>
 
             <style jsx>{`
