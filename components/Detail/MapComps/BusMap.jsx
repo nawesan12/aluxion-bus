@@ -15,10 +15,10 @@ export default function BusMap(props) {
     
         const mapboxMap = new mapboxgl.Map({
           container: node,
-                accessToken: 'pk.eyJ1IjoibmF3ZXNhbjEyIiwiYSI6ImNsMDBodHRvMjBraWczbnI4eW02d2JiM2wifQ.Dv6VAACK0o4iGh64xHzNdQ',
-                style: "mapbox://styles/mapbox/streets-v11",
-          center: [-74.5, 40],
-          zoom: 9,
+          accessToken: 'pk.eyJ1IjoibmF3ZXNhbjEyIiwiYSI6ImNsMDBodHRvMjBraWczbnI4eW02d2JiM2wifQ.Dv6VAACK0o4iGh64xHzNdQ',
+          style: "mapbox://styles/mapbox/streets-v11",
+          center: [-3.8196242, 40.4381311],
+          zoom: 12,
         });
     
         setMap(mapboxMap);
