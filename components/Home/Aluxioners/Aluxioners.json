@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Javi",
+        "role": "CEO & Founder",
+        "toAluxion": 681,
+        "toHome": 288,
+        "image": "/images/javi.jpg"
+    },
+    {
+        "name": "Aluxioner 01",
+        "role": "Frontend Developer",
+        "toAluxion": 3378,
+        "toHome": 494,
+        "image": "/images/aluxioner01.jpg"
+    },
+    {
+        "name": "Aluxioner 02",
+        "role": "Backend Developer",
+        "toAluxion": 2908,
+        "toHome": 1229,
+        "image": "/images/aluxioner02.jpg"
+    },
+    {
+        "name": "Aluxioner 03",
+        "role": "Mobile Developer",
+        "toAluxion": 1688,
+        "toHome": 2710,
+        "image": "/images/aluxioner03.jpg"
+    },
+    {
+        "name": "Aluxioner 04",
+        "role": "Head of Backend",
+        "toAluxion": 59,
+        "toHome": 85,
+        "image": "/images/aluxioner04.jpg"
+    },
+    {
+        "name": "Aluxioner 05",
+        "role": "Designer",
+        "toAluxion": 189,
+        "toHome": 806,
+        "image": "/images/aluxioner05.jpg"
+    }
+]
